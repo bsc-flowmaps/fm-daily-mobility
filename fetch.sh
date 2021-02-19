@@ -12,7 +12,7 @@ do
 
     for date in $DATES; do
 
-    	FILENAME=data/$SOURCE_LAYER-$TARGET_LAYER/$date.daily_mobility.$FORMAT
+    	FILENAME=data/$SOURCE_LAYER-$TARGET_LAYER/$date.$SOURCE_LAYER-$TARGET_LAYER.daily_mobility.$FORMAT
     	echo $date
 
 	flowmaps-data daily_mobility download \
