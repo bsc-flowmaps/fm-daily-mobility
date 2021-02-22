@@ -8,6 +8,8 @@ For more information visit: https://flowmaps.life.bsc.es/flowboard/data and http
 
 ## Dashboard
 
+https://flowmaps.life.bsc.es/flowboard/board_mobility/
+
 <a href="https://flowmaps.life.bsc.es/flowboard/board_mobility/">
   <img src="https://i.ibb.co/MMHX6DD/image.png"
      alt="Mobility"
