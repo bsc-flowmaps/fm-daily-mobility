@@ -8,10 +8,10 @@ For more information visit: https://flowmaps.life.bsc.es/flowboard/data and http
 
 ## Dashboard
 
-https://flowmaps.life.bsc.es/flowboard/board_mobility/
+https://flowmaps.life.bsc.es/flowboard/board_incidence/
 
-<a href="https://flowmaps.life.bsc.es/flowboard/board_mobility/">
-  <img src="https://i.ibb.co/MMHX6DD/image.png"
-     alt="Mobility"
+<a href="https://flowmaps.life.bsc.es/flowboard/board_incidence/">
+  <img src="https://i.ibb.co/KKjGz2V/Screenshot-2021-02-22-https-flowmaps-life-bsc-es.png"
+     alt="Incidence"
      height=350/>
 </a>  
