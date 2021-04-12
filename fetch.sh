@@ -9,6 +9,11 @@ do
 
     mkdir -p data/$SOURCE_LAYER-$TARGET_LAYER/
 
+	if [ -f "$FILENAME" ]; then
+		echo "skipping $FILENAME (already exists)"
+		continue
+	fi
+
     for date in $DATES; do
     	echo $date
 	    flowmaps-data daily_mobility download \
