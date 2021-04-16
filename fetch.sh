@@ -9,23 +9,22 @@ do
     DATES=`flowmaps-data daily_mobility list-dates`
 
     mkdir -p data/$SOURCE_LAYER-$TARGET_LAYER/
-
-	if [ -f "$FILENAME" ]; then
-		echo "skipping $FILENAME (already exists)"
-		continue
-	fi
-
     for date in $DATES; do
+        echo $date
 
-    	FILENAME=data/$SOURCE_LAYER-$TARGET_LAYER/$date.$SOURCE_LAYER-$TARGET_LAYER.daily_mobility.$FORMAT
-    	echo $date
+        FILENAME=data/$SOURCE_LAYER-$TARGET_LAYER/$date.$SOURCE_LAYER-$TARGET_LAYER.daily_mobility.$FORMAT
 
-	flowmaps-data daily_mobility download \
-	    	--start-date $date \
-	    	--end-date $date \
-	    	--source-layer $SOURCE_LAYER \
-	    	--target-layer $TARGET_LAYER \
-	    	--output-format $FORMAT \
-	    	--output-file $FILENAME
+        if [ -f "$FILENAME" ]; then
+            echo "skipping $FILENAME (already exists)"
+            continue
+        fi
+
+        flowmaps-data daily_mobility download \
+                --start-date $date \
+                --end-date $date \
+                --source-layer $SOURCE_LAYER \
+                --target-layer $TARGET_LAYER \
+                --output-format $FORMAT \
+                --output-file $FILENAME
     done
 done
